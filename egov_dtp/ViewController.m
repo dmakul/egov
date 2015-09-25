@@ -125,11 +125,11 @@
             [[CustomAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"cluster"];
         
         if([pin nodeCount] < 30) {
-            annView.image = [[UIImage imageNamed:@"green"] scaledToSize:CGSizeMake(30, 30)];
+            annView.image = [[UIImage imageNamed:@"green"] scaledToSize:CGSizeMake(35, 35)];
         } else if ([pin nodeCount] <= 50) {
-            annView.image = [[UIImage imageNamed:@"orange"] scaledToSize:CGSizeMake(30, 30)];
+            annView.image = [[UIImage imageNamed:@"orange"] scaledToSize:CGSizeMake(35, 35)];
         } else {
-            annView.image = [[UIImage imageNamed:@"red"] scaledToSize:CGSizeMake(30, 30)];
+            annView.image = [[UIImage imageNamed:@"red"] scaledToSize:CGSizeMake(35, 35)];
         }
         
         [(CustomAnnotationView*)annView setClusterText:
