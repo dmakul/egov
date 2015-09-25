@@ -17,6 +17,7 @@
 		2634DE9E1BB52A1A00F7EF4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2634DE9C1BB52A1A00F7EF4A /* LaunchScreen.storyboard */; };
 		2634DEA91BB52A1A00F7EF4A /* egov_dtpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634DEA81BB52A1A00F7EF4A /* egov_dtpTests.m */; };
 		2634DEB41BB52A1A00F7EF4A /* egov_dtpUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634DEB31BB52A1A00F7EF4A /* egov_dtpUITests.m */; };
+		264C7B701BB58B2700B898AF /* CrashPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 264C7B6F1BB58B2700B898AF /* CrashPlace.m */; settings = {ASSET_TAGS = (); }; };
 		26DA16A81BB582DD00EFC2DC /* UIColor+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA16A51BB582DD00EFC2DC /* UIColor+Helpers.m */; settings = {ASSET_TAGS = (); }; };
 		26DA16A91BB582DD00EFC2DC /* UIImage+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA16A71BB582DD00EFC2DC /* UIImage+Helpers.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -56,6 +57,8 @@
 		2634DEAF1BB52A1A00F7EF4A /* egov_dtpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = egov_dtpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2634DEB31BB52A1A00F7EF4A /* egov_dtpUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = egov_dtpUITests.m; sourceTree = "<group>"; };
 		2634DEB51BB52A1A00F7EF4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		264C7B6E1BB58B2700B898AF /* CrashPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashPlace.h; sourceTree = "<group>"; };
+		264C7B6F1BB58B2700B898AF /* CrashPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashPlace.m; sourceTree = "<group>"; };
 		26DA16A31BB582DD00EFC2DC /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = egov_dtp/Macros.h; sourceTree = "<group>"; };
 		26DA16A41BB582DD00EFC2DC /* UIColor+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Helpers.h"; path = "egov_dtp/UIColor+Helpers.h"; sourceTree = "<group>"; };
 		26DA16A51BB582DD00EFC2DC /* UIColor+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Helpers.m"; path = "egov_dtp/UIColor+Helpers.m"; sourceTree = "<group>"; };
@@ -105,6 +108,7 @@
 			children = (
 				26110C291BB52DD100B0C63B /* podfile */,
 				26DA169B1BB57EF400EFC2DC /* Helpers */,
+				2697467C1BB58A2D0088171F /* Objects */,
 				2634DEC11BB52A2500F7EF4A /* Main Classes */,
 				2634DE8D1BB52A1A00F7EF4A /* egov_dtp */,
 				2634DEA71BB52A1A00F7EF4A /* egov_dtpTests */,
@@ -172,6 +176,15 @@
 				2634DE951BB52A1A00F7EF4A /* ViewController.m */,
 			);
 			name = "Main Classes";
+			sourceTree = "<group>";
+		};
+		2697467C1BB58A2D0088171F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				264C7B6E1BB58B2700B898AF /* CrashPlace.h */,
+				264C7B6F1BB58B2700B898AF /* CrashPlace.m */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 		26DA169B1BB57EF400EFC2DC /* Helpers */ = {
@@ -380,6 +393,7 @@
 				2634DE961BB52A1A00F7EF4A /* ViewController.m in Sources */,
 				2634DE931BB52A1A00F7EF4A /* AppDelegate.m in Sources */,
 				2634DE901BB52A1A00F7EF4A /* main.m in Sources */,
+				264C7B701BB58B2700B898AF /* CrashPlace.m in Sources */,
 				26DA16A81BB582DD00EFC2DC /* UIColor+Helpers.m in Sources */,
 				26DA16A91BB582DD00EFC2DC /* UIImage+Helpers.m in Sources */,
 			);

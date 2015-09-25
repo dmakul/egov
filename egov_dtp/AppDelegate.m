@@ -1,3 +1,4 @@
+#import <ChameleonFramework/Chameleon.h>
 #import "ViewController.h"
 #import "AppDelegate.h"
 #import "Macros.h"
@@ -30,10 +31,10 @@
 }
 
 - (void)setUpNavigationBar {
-    [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor flatOrangeColor]];
     [[UINavigationBar appearance] setTitleTextAttributes: @{
-                                                            NSForegroundColorAttributeName: [UIColor blackColor],
-                                                            NSFontAttributeName: [UIFont fontWithName:FontMedium size:ButtonFontSize]
+                                                            NSForegroundColorAttributeName: [UIColor flatBlackColor],
+                                                            NSFontAttributeName: [UIFont fontWithName:FontRegular size:ButtonFontSize]
                                                             }];
 }
 
