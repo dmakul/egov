@@ -6,6 +6,7 @@
 #import "UIColor+Helpers.h"
 #import "ViewController.h"
 #import <MapKit/MapKit.h>
+#import <Parse/Parse.h>
 #import "CrashPlace.h"
 #import "Macros.h"
 
@@ -23,6 +24,7 @@
     [super viewDidLoad];
     self.title = @"Карта";
     [self setUpScreen];
+    
 }
 
 - (void) setUpScreen {
@@ -46,6 +48,10 @@
     self.dropdownMenuView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     [self.dropdownMenuView addTarget:self action:@selector(dropMenuChanged:) forControlEvents:UIControlEventValueChanged];
 }
+
+#pragma mark - Parse methods
+
+
 
 #pragma mark - Helper methods -
 
