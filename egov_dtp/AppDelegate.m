@@ -25,12 +25,11 @@
     [self setUpNavigationBar];
     
     
+    
     return YES;
 }
 
 - (void)setUpNavigationBar {
-//    [[UINavigationBar appearance] setBackIndicatorImage:[[UIImage imageNamed:@"back"] scaledToSize:CGSizeMake(25, 20)]];
-//    [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[[UIImage imageNamed:@"back"] scaledToSize:CGSizeMake(25, 20)]];
     [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
     [[UINavigationBar appearance] setTitleTextAttributes: @{
                                                             NSForegroundColorAttributeName: [UIColor blackColor],
