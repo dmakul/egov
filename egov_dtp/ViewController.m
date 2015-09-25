@@ -1,5 +1,7 @@
 #import <ChameleonFramework/Chameleon.h>
+#import "RatingViewController.h"
 #import <Masonry/Masonry.h>
+#import "UIColor+Helpers.h"
 #import "ViewController.h"
 #import <MapKit/MapKit.h>
 #import "CrashPlace.h"

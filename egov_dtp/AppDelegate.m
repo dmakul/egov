@@ -1,6 +1,8 @@
 #import <ChameleonFramework/Chameleon.h>
 #import "RatingViewController.h"
+#import "UIImage+Helpers.h"
 #import "ViewController.h"
+#import "UIColor+Helpers.h"
 #import "AppDelegate.h"
 #import "Macros.h"
 
@@ -39,10 +41,8 @@
     self.tabBarController = [[UITabBarController alloc] init];
     NSArray* controllers = [NSArray arrayWithObjects:self.mapNavVC, self.ratingNavVC2, nil];
     self.tabBarController.viewControllers = controllers;
-    
+
     //setups
-    
-    
     [self setUpTabBar];
     [self setUpNavigationBar];
     
@@ -61,7 +61,20 @@
 
 - (void) setUpTabBar {
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:FontMedium size:13.0f], NSFontAttributeName, nil] forState:UIControlStateNormal];
-    [[UITabBar appearance] setTintColor:[UIColor flatOrangeColorDark]];
+    [[UITabBar appearance] setTintColor:[UIColor colorFromHexString:@"#FF6A30"]];
+    
+    int index = 0;
+    for(UITabBarItem *item in self.tabBarController.tabBar.items) {
+        if(index == 0) {
+            UIImage *image = [[UIImage imageNamed:@"map"] scaledToSize:CGSizeMake(25, 25)];
+            item.image = image;
+        } else {
+            UIImage *image = [[UIImage imageNamed:@"rating"] scaledToSize:CGSizeMake(25, 25)];
+            item.title = @"Рейтинг";
+            item.image = image;
+        }
+        index++;
+    }
 }
 
 @end
