@@ -19,6 +19,7 @@
 		2634DEB41BB52A1A00F7EF4A /* egov_dtpUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634DEB31BB52A1A00F7EF4A /* egov_dtpUITests.m */; };
 		264C7B761BB5A7A500B898AF /* CrashPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 264C7B751BB5A7A500B898AF /* CrashPlace.m */; settings = {ASSET_TAGS = (); }; };
 		264C7B791BB5A7AC00B898AF /* RatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 264C7B781BB5A7AC00B898AF /* RatingViewController.m */; settings = {ASSET_TAGS = (); }; };
+		2672F2CA1BB5FA29004282CF /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2672F2C91BB5FA29004282CF /* CustomAnnotationView.m */; settings = {ASSET_TAGS = (); }; };
 		26DA16A81BB582DD00EFC2DC /* UIColor+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA16A51BB582DD00EFC2DC /* UIColor+Helpers.m */; settings = {ASSET_TAGS = (); }; };
 		26DA16A91BB582DD00EFC2DC /* UIImage+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA16A71BB582DD00EFC2DC /* UIImage+Helpers.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -62,6 +63,8 @@
 		264C7B751BB5A7A500B898AF /* CrashPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CrashPlace.m; path = egov_dtp/CrashPlace.m; sourceTree = "<group>"; };
 		264C7B771BB5A7AC00B898AF /* RatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RatingViewController.h; path = egov_dtp/RatingViewController.h; sourceTree = "<group>"; };
 		264C7B781BB5A7AC00B898AF /* RatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RatingViewController.m; path = egov_dtp/RatingViewController.m; sourceTree = "<group>"; };
+		2672F2C81BB5FA29004282CF /* CustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomAnnotationView.h; path = egov_dtp/CustomAnnotationView.h; sourceTree = "<group>"; };
+		2672F2C91BB5FA29004282CF /* CustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomAnnotationView.m; path = egov_dtp/CustomAnnotationView.m; sourceTree = "<group>"; };
 		26DA16A31BB582DD00EFC2DC /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = egov_dtp/Macros.h; sourceTree = "<group>"; };
 		26DA16A41BB582DD00EFC2DC /* UIColor+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Helpers.h"; path = "egov_dtp/UIColor+Helpers.h"; sourceTree = "<group>"; };
 		26DA16A51BB582DD00EFC2DC /* UIColor+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Helpers.m"; path = "egov_dtp/UIColor+Helpers.m"; sourceTree = "<group>"; };
@@ -188,6 +191,8 @@
 			children = (
 				264C7B741BB5A7A500B898AF /* CrashPlace.h */,
 				264C7B751BB5A7A500B898AF /* CrashPlace.m */,
+				2672F2C81BB5FA29004282CF /* CustomAnnotationView.h */,
+				2672F2C91BB5FA29004282CF /* CustomAnnotationView.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -397,6 +402,7 @@
 			files = (
 				2634DE961BB52A1A00F7EF4A /* ViewController.m in Sources */,
 				2634DE931BB52A1A00F7EF4A /* AppDelegate.m in Sources */,
+				2672F2CA1BB5FA29004282CF /* CustomAnnotationView.m in Sources */,
 				2634DE901BB52A1A00F7EF4A /* main.m in Sources */,
 				264C7B791BB5A7AC00B898AF /* RatingViewController.m in Sources */,
 				264C7B761BB5A7A500B898AF /* CrashPlace.m in Sources */,

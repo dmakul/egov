@@ -2,18 +2,22 @@
 #import <MISDropdownViewController/MISDropdownMenuView.h>
 #import <ChameleonFramework/Chameleon.h>
 #import <JTProgressHUD/JTProgressHUD.h>
+#import <REVClusterMap/REVClusterMap.h>
+#import "CustomAnnotationView.h"
 #import "RatingViewController.h"
 #import <Masonry/Masonry.h>
 #import "UIColor+Helpers.h"
+#import "UIImage+Helpers.h"
 #import "ViewController.h"
 #import <MapKit/MapKit.h>
 #import <Parse/Parse.h>
 #import "CrashPlace.h"
 #import "Macros.h"
 
-@interface ViewController ()
+@interface ViewController () <MKMapViewDelegate>
 
-@property (nonatomic) MKMapView *mapView;
+@property (nonatomic) REVClusterMapView *mapView;
+//@property (nonatomic) MKMapView *mapView;
 @property (strong, nonatomic) MISDropdownViewController *dropdownViewController;
 @property (strong, nonatomic) MISDropdownMenuView *dropdownMenuView;
 
@@ -30,12 +34,17 @@
 }
 
 - (void) setUpScreen {
-    self.mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
+//    self.mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
+//    [self.view addSubview:self.mapView];
+    
+    self.mapView = [[REVClusterMapView alloc] initWithFrame:self.view.bounds];
+    self.mapView.delegate = self;
     CLLocation *initialLocation = [[CLLocation alloc] initWithLatitude:43.247702 longitude:76.911064];
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(initialLocation.coordinate, 15000.0, 15000.0);
     [self.mapView setRegion:region];
     [self.view addSubview:self.mapView];
-           
+
+    
     UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"Фильтр" style:UIBarButtonItemStyleDone target:self action:@selector(toggleMenu:)];
     [leftButton setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                         [UIFont fontWithName:FontRegular size:TextFieldFontSize], NSFontAttributeName,
@@ -51,24 +60,37 @@
 #pragma mark - Parse methods
 
 - (void) downloadList {
+    self.carCrashList = [NSMutableArray new];
     PFQuery *query = [PFQuery queryWithClassName:@"Geoposition"];
     query.limit = 1000;
     [query whereKey:@"type" equalTo:@"Автомобильная авария"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
-            self.carCrashList = [objects mutableCopy];
+            for(PFObject *object in objects) {
+                REVClusterPin *pin = [[REVClusterPin alloc] init];
+                PFGeoPoint *point = object[@"location"];
+                pin.coordinate = CLLocationCoordinate2DMake(point.latitude, point.longitude);
+                [self.carCrashList addObject:pin];
+            }
             [self drawAnnotationsFrom:self.carCrashList];
+            [JTProgressHUD hideWithTransition:JTProgressHUDTransitionFade];
         } else {
             NSLog(@"error");
         }
     }];
     
+    self.pedestrianCrashList = [NSMutableArray new];
     PFQuery *query2 = [PFQuery queryWithClassName:@"Geoposition"];
     query2.limit = 1000;
     [query2 whereKey:@"type" equalTo:@"Столкновение с пешеходом"];
     [query2 findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
-            self.pedestrianCrashList = [objects mutableCopy];
+            for(PFObject *object in objects) {
+                REVClusterPin *pin = [[REVClusterPin alloc] init];
+                PFGeoPoint *point = object[@"location"];
+                pin.coordinate = CLLocationCoordinate2DMake(point.latitude, point.longitude);
+                [self.pedestrianCrashList addObject:pin];
+            }
             [JTProgressHUD hideWithTransition:JTProgressHUDTransitionFade];
         } else {
             NSLog(@"error");
@@ -79,12 +101,56 @@
 #pragma mark - Map View Methods
 
 - (void) drawAnnotationsFrom:(NSMutableArray *) list {
-    for(PFObject *object in list) {
-        PFGeoPoint *point = object[@"location"];
-        CrashPlace *place = [[CrashPlace alloc] initWithCoordinate:CLLocationCoordinate2DMake(point.latitude, point.longitude)];
-        [self.mapView addAnnotation:place];
-    }
+    [self.mapView addAnnotations:list];
 }
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
+{
+    if([annotation class] == MKUserLocation.class) {
+        //userLocation = annotation;
+        return nil;
+    }
+    
+    REVClusterPin *pin = (REVClusterPin *)annotation;
+    
+    CustomAnnotationView *annView;
+    
+    if( [pin nodeCount] > 0 ){
+        pin.title = @"___";
+        
+        [mapView dequeueReusableAnnotationViewWithIdentifier:@"cluster"];
+        
+        if( !annView )
+            annView = (CustomAnnotationView*)
+            [[CustomAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"cluster"];
+        
+        if([pin nodeCount] < 30) {
+            annView.image = [[UIImage imageNamed:@"green"] scaledToSize:CGSizeMake(30, 30)];
+        } else if ([pin nodeCount] <= 50) {
+            annView.image = [[UIImage imageNamed:@"orange"] scaledToSize:CGSizeMake(30, 30)];
+        } else {
+            annView.image = [[UIImage imageNamed:@"red"] scaledToSize:CGSizeMake(30, 30)];
+        }
+        
+        [(CustomAnnotationView*)annView setClusterText:
+         [NSString stringWithFormat:@"%lu",(unsigned long)[pin nodeCount]]];
+        
+        annView.canShowCallout = NO;
+    } else {
+        annView = (CustomAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"pin"];
+        
+        if( !annView )
+            annView = (CustomAnnotationView *)[[MKAnnotationView alloc] initWithAnnotation:annotation
+                                                    reuseIdentifier:@"pin"];
+        
+        annView.image = [[UIImage imageNamed:@"point"] scaledToSize:CGSizeMake(17, 30)];
+        annView.canShowCallout = YES;
+        
+        annView.calloutOffset = CGPointMake(-6.0, 0.0);
+    }
+    return annView;
+}
+
 
 #pragma mark - Helper methods
 
