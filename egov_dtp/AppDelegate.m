@@ -42,7 +42,7 @@
     NSArray* controllers = [NSArray arrayWithObjects:self.mapNavVC, self.ratingNavVC2, nil];
     self.tabBarController.viewControllers = controllers;
 
-    //setups
+    //setup tab bar and navigation controller
     [self setUpTabBar];
     [self setUpNavigationBar];
     
@@ -52,7 +52,7 @@
 }
 
 - (void)setUpNavigationBar {
-    [[UINavigationBar appearance] setTintColor:[UIColor flatOrangeColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor flatOrangeColorDark]];
     [[UINavigationBar appearance] setTitleTextAttributes: @{
                                                             NSForegroundColorAttributeName: [UIColor flatBlackColor],
                                                             NSFontAttributeName: [UIFont fontWithName:FontRegular size:ButtonFontSize]
@@ -66,12 +66,23 @@
     int index = 0;
     for(UITabBarItem *item in self.tabBarController.tabBar.items) {
         if(index == 0) {
-            UIImage *image = [[UIImage imageNamed:@"map"] scaledToSize:CGSizeMake(25, 25)];
-            item.image = image;
+            if(IS_IPHONE_5) {
+                UIImage *image = [[UIImage imageNamed:@"map"] scaledToSize:CGSizeMake(22, 22)];
+                item.image = image;
+            } else {
+                UIImage *image = [[UIImage imageNamed:@"map"] scaledToSize:CGSizeMake(25, 25)];
+                item.image = image;
+            }
+            
         } else {
-            UIImage *image = [[UIImage imageNamed:@"rating"] scaledToSize:CGSizeMake(25, 25)];
             item.title = @"Рейтинг";
-            item.image = image;
+            if(IS_IPHONE_5) {
+                UIImage *image = [[UIImage imageNamed:@"rating"] scaledToSize:CGSizeMake(22, 22)];
+                item.image = image;
+            } else {
+                UIImage *image = [[UIImage imageNamed:@"rating"] scaledToSize:CGSizeMake(25, 25)];
+                item.image = image;
+            }
         }
         index++;
     }

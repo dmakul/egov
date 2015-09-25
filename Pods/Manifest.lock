@@ -3,13 +3,16 @@ PODS:
     - ChameleonFramework/Default (= 2.0.1)
   - ChameleonFramework/Default (2.0.1)
   - Masonry (0.6.3)
+  - MISDropdownViewController (1.0.0)
 
 DEPENDENCIES:
   - ChameleonFramework
   - Masonry
+  - MISDropdownViewController
 
 SPEC CHECKSUMS:
   ChameleonFramework: c8e3d76f1c86a607b3b8ea776880bc5148b70c1a
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
+  MISDropdownViewController: 91ee20a67c1e6dca93aee25aa5ca30c6769f7554
 
 COCOAPODS: 0.38.2

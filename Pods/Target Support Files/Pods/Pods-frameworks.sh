@@ -53,9 +53,11 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods/ChameleonFramework.framework'
+  install_framework 'Pods/MISDropdownViewController.framework'
   install_framework 'Pods/Masonry.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods/ChameleonFramework.framework'
+  install_framework 'Pods/MISDropdownViewController.framework'
   install_framework 'Pods/Masonry.framework'
 fi
