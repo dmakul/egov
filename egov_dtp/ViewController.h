@@ -10,7 +10,8 @@
 
 @interface ViewController : UIViewController
 
-@property (nonatomic) NSMutableArray *crashList;
+@property (nonatomic) NSMutableArray *carCrashList;
+@property (nonatomic) NSMutableArray *pedestrianCrashList;
 
 @end
 

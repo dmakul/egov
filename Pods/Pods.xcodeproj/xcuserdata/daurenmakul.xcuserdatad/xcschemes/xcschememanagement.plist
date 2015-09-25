@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JTProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MISDropdownViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -34,35 +39,50 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>REVClusterMap.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>510A028E3E93E3BAAEA205DC53C6854A</key>
+		<key>4FFFE27C5E42A05553CAB438DB26A4A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7333F190228911EAA8F2BEA4A4E468EE</key>
+		<key>58BA959B9D835375639F79F442450E89</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>89CFC524F724AE874D729B8F6C32F2E7</key>
+		<key>635DECF6FFEFA144DB35D31A7BC433AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>99F09B932D24020F2FECE540021801B2</key>
+		<key>79E84BA7AF08A5D7200D8C02A47253C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E4BB077B95CAE7D95C3D9BB2E0AE0847</key>
+		<key>996A3181C6991FD1FFA8595325A25860</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EF3DF5A49C78B8AF91E854B082FF08BC</key>
+		<key>BD3483220F124A47D9454ACD5034D0A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D12B0DDB02CCCD068D43DA5359B5395D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DDAA33ED217A70C7639CCB2207DE4E6D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

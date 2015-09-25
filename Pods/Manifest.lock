@@ -3,22 +3,28 @@ PODS:
   - ChameleonFramework (2.0.1):
     - ChameleonFramework/Default (= 2.0.1)
   - ChameleonFramework/Default (2.0.1)
+  - JTProgressHUD (1.0.3)
   - Masonry (0.6.3)
   - MISDropdownViewController (1.0.0)
   - Parse (1.8.5):
     - Bolts/Tasks (>= 1.2.2)
+  - REVClusterMap (0.0.1)
 
 DEPENDENCIES:
   - ChameleonFramework
+  - JTProgressHUD
   - Masonry
   - MISDropdownViewController
   - Parse
+  - REVClusterMap
 
 SPEC CHECKSUMS:
   Bolts: 805a4a87413e49d4a0c2b7d469084cbc46b09342
   ChameleonFramework: c8e3d76f1c86a607b3b8ea776880bc5148b70c1a
+  JTProgressHUD: d2519c41e664acb554932aac12f5a94b47d88a69
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   MISDropdownViewController: 91ee20a67c1e6dca93aee25aa5ca30c6769f7554
   Parse: 17ad8e0677ed682f7f00503860fcda0f4eb74168
+  REVClusterMap: 7d6530ec43ffca8fc6cd75815ccf715d462fa46a
 
 COCOAPODS: 0.38.2

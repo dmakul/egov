@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0BCCC7BC0613661DA3371DFF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E817A7AD846D103D72E748 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		26110C2A1BB52DD100B0C63B /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 26110C291BB52DD100B0C63B /* podfile */; settings = {ASSET_TAGS = (); }; };
+		26110C2A1BB52DD100B0C63B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 26110C291BB52DD100B0C63B /* Podfile */; settings = {ASSET_TAGS = (); }; };
 		2634DE901BB52A1A00F7EF4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634DE8F1BB52A1A00F7EF4A /* main.m */; };
 		2634DE931BB52A1A00F7EF4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634DE921BB52A1A00F7EF4A /* AppDelegate.m */; };
 		2634DE961BB52A1A00F7EF4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634DE951BB52A1A00F7EF4A /* ViewController.m */; };
@@ -41,7 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		26110C291BB52DD100B0C63B /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
+		26110C291BB52DD100B0C63B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2634DE8B1BB52A1900F7EF4A /* egov_dtp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = egov_dtp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2634DE8F1BB52A1A00F7EF4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2634DE911BB52A1A00F7EF4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = egov_dtp/AppDelegate.h; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		2634DE821BB52A1900F7EF4A = {
 			isa = PBXGroup;
 			children = (
-				26110C291BB52DD100B0C63B /* podfile */,
+				26110C291BB52DD100B0C63B /* Podfile */,
 				26DA169B1BB57EF400EFC2DC /* Helpers */,
 				2697467C1BB58A2D0088171F /* Objects */,
 				2634DEC11BB52A2500F7EF4A /* Main Classes */,
@@ -321,7 +321,7 @@
 			files = (
 				2634DE9E1BB52A1A00F7EF4A /* LaunchScreen.storyboard in Resources */,
 				2634DE9B1BB52A1A00F7EF4A /* Assets.xcassets in Resources */,
-				26110C2A1BB52DD100B0C63B /* podfile in Resources */,
+				26110C2A1BB52DD100B0C63B /* Podfile in Resources */,
 				2634DE991BB52A1A00F7EF4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -54,14 +54,18 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods/Bolts.framework'
   install_framework 'Pods/ChameleonFramework.framework'
+  install_framework 'Pods/JTProgressHUD.framework'
   install_framework 'Pods/MISDropdownViewController.framework'
   install_framework 'Pods/Masonry.framework'
   install_framework 'Pods/Parse.framework'
+  install_framework 'Pods/REVClusterMap.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods/Bolts.framework'
   install_framework 'Pods/ChameleonFramework.framework'
+  install_framework 'Pods/JTProgressHUD.framework'
   install_framework 'Pods/MISDropdownViewController.framework'
   install_framework 'Pods/Masonry.framework'
   install_framework 'Pods/Parse.framework'
+  install_framework 'Pods/REVClusterMap.framework'
 fi
