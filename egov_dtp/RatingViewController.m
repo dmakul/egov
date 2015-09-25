@@ -19,5 +19,5 @@
     [self.view setBackgroundColor:[UIColor colorFromHexString:MainColor]];
 
 }
-//123
+
 @end
