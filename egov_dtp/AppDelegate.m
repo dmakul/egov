@@ -4,6 +4,7 @@
 #import "ViewController.h"
 #import "UIColor+Helpers.h"
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 #import "Macros.h"
 
 @interface AppDelegate ()
@@ -21,6 +22,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
  
+    [Parse setApplicationId:@"sNPLNjaZRRNAjs8eqGAvJa4ufbCFcN5FG58DZZ2t"
+                  clientKey:@"HyqqWbLE1h73fURqbStfuRhWwfJZQLBqcpGFDofz"];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window setBackgroundColor:[UIColor whiteColor]];
     [self.window makeKeyAndVisible];
