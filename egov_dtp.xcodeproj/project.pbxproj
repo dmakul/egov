@@ -22,6 +22,9 @@
 		2672F2CA1BB5FA29004282CF /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2672F2C91BB5FA29004282CF /* CustomAnnotationView.m */; settings = {ASSET_TAGS = (); }; };
 		26DA16A81BB582DD00EFC2DC /* UIColor+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA16A51BB582DD00EFC2DC /* UIColor+Helpers.m */; settings = {ASSET_TAGS = (); }; };
 		26DA16A91BB582DD00EFC2DC /* UIImage+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA16A71BB582DD00EFC2DC /* UIImage+Helpers.m */; settings = {ASSET_TAGS = (); }; };
+		26E06B941BB606D3005A3D8D /* SubMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E06B931BB606D3005A3D8D /* SubMenuTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		26E06B9B1BB6076D005A3D8D /* UIFont+Sizes.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E06B9A1BB6076D005A3D8D /* UIFont+Sizes.m */; settings = {ASSET_TAGS = (); }; };
+		26E06B9E1BB607B4005A3D8D /* UIColor+Tints.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E06B9D1BB607B4005A3D8D /* UIColor+Tints.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,12 @@
 		26DA16A51BB582DD00EFC2DC /* UIColor+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Helpers.m"; path = "egov_dtp/UIColor+Helpers.m"; sourceTree = "<group>"; };
 		26DA16A61BB582DD00EFC2DC /* UIImage+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Helpers.h"; path = "egov_dtp/UIImage+Helpers.h"; sourceTree = "<group>"; };
 		26DA16A71BB582DD00EFC2DC /* UIImage+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Helpers.m"; path = "egov_dtp/UIImage+Helpers.m"; sourceTree = "<group>"; };
+		26E06B921BB606D3005A3D8D /* SubMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubMenuTableViewCell.h; path = egov_dtp/SubMenuTableViewCell.h; sourceTree = "<group>"; };
+		26E06B931BB606D3005A3D8D /* SubMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubMenuTableViewCell.m; path = egov_dtp/SubMenuTableViewCell.m; sourceTree = "<group>"; };
+		26E06B991BB6076D005A3D8D /* UIFont+Sizes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+Sizes.h"; path = "egov_dtp/UIFont+Sizes.h"; sourceTree = "<group>"; };
+		26E06B9A1BB6076D005A3D8D /* UIFont+Sizes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+Sizes.m"; path = "egov_dtp/UIFont+Sizes.m"; sourceTree = "<group>"; };
+		26E06B9C1BB607B4005A3D8D /* UIColor+Tints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Tints.h"; path = "egov_dtp/UIColor+Tints.h"; sourceTree = "<group>"; };
+		26E06B9D1BB607B4005A3D8D /* UIColor+Tints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Tints.m"; path = "egov_dtp/UIColor+Tints.m"; sourceTree = "<group>"; };
 		33E817A7AD846D103D72E748 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		741245E981599091538023C4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		97ACC26232790107BB10DAD2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +202,8 @@
 				264C7B751BB5A7A500B898AF /* CrashPlace.m */,
 				2672F2C81BB5FA29004282CF /* CustomAnnotationView.h */,
 				2672F2C91BB5FA29004282CF /* CustomAnnotationView.m */,
+				26E06B921BB606D3005A3D8D /* SubMenuTableViewCell.h */,
+				26E06B931BB606D3005A3D8D /* SubMenuTableViewCell.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -205,6 +216,10 @@
 				26DA16A51BB582DD00EFC2DC /* UIColor+Helpers.m */,
 				26DA16A61BB582DD00EFC2DC /* UIImage+Helpers.h */,
 				26DA16A71BB582DD00EFC2DC /* UIImage+Helpers.m */,
+				26E06B991BB6076D005A3D8D /* UIFont+Sizes.h */,
+				26E06B9A1BB6076D005A3D8D /* UIFont+Sizes.m */,
+				26E06B9C1BB607B4005A3D8D /* UIColor+Tints.h */,
+				26E06B9D1BB607B4005A3D8D /* UIColor+Tints.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -402,12 +417,15 @@
 			files = (
 				2634DE961BB52A1A00F7EF4A /* ViewController.m in Sources */,
 				2634DE931BB52A1A00F7EF4A /* AppDelegate.m in Sources */,
+				26E06B9E1BB607B4005A3D8D /* UIColor+Tints.m in Sources */,
 				2672F2CA1BB5FA29004282CF /* CustomAnnotationView.m in Sources */,
 				2634DE901BB52A1A00F7EF4A /* main.m in Sources */,
 				264C7B791BB5A7AC00B898AF /* RatingViewController.m in Sources */,
 				264C7B761BB5A7A500B898AF /* CrashPlace.m in Sources */,
 				26DA16A81BB582DD00EFC2DC /* UIColor+Helpers.m in Sources */,
 				26DA16A91BB582DD00EFC2DC /* UIImage+Helpers.m in Sources */,
+				26E06B941BB606D3005A3D8D /* SubMenuTableViewCell.m in Sources */,
+				26E06B9B1BB6076D005A3D8D /* UIFont+Sizes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
