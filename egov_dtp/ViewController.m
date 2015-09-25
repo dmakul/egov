@@ -24,7 +24,7 @@
     [super viewDidLoad];
     self.title = @"Карта";
     [self setUpScreen];
-    
+    [self downloadList];
 }
 
 - (void) setUpScreen {
@@ -51,15 +51,24 @@
 
 #pragma mark - Parse methods
 
+- (void) downloadList {
+    PFQuery *query = [PFQuery queryWithClassName:@"Geoposition"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            self.crashList = [objects mutableCopy];
+            NSLog(@"%lu" , self.crashList.count);
+        } else {
+
+        }
+    }];
+
+}
 
 
-#pragma mark - Helper methods -
+#pragma mark - Helper methods
 
 - (void)dropMenuChanged:(MISDropdownMenuView *)dropDownMenuView {
     [self.dropdownViewController dismissDropdownAnimated:YES];
-//    
-//    NSInteger selectedItemIndex = [dropDownMenuView selectedItemIndex];
-//    self.selectionLabel.text = dropDownMenuView.items[selectedItemIndex];
 }
 
 - (void)toggleMenu:(id)sender {
