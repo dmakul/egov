@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BCCC7BC0613661DA3371DFF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E817A7AD846D103D72E748 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		26110C2A1BB52DD100B0C63B /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 26110C291BB52DD100B0C63B /* podfile */; settings = {ASSET_TAGS = (); }; };
 		2634DE901BB52A1A00F7EF4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634DE8F1BB52A1A00F7EF4A /* main.m */; };
 		2634DE931BB52A1A00F7EF4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634DE921BB52A1A00F7EF4A /* AppDelegate.m */; };
 		2634DE961BB52A1A00F7EF4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634DE951BB52A1A00F7EF4A /* ViewController.m */; };
@@ -15,6 +17,8 @@
 		2634DE9E1BB52A1A00F7EF4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2634DE9C1BB52A1A00F7EF4A /* LaunchScreen.storyboard */; };
 		2634DEA91BB52A1A00F7EF4A /* egov_dtpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634DEA81BB52A1A00F7EF4A /* egov_dtpTests.m */; };
 		2634DEB41BB52A1A00F7EF4A /* egov_dtpUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634DEB31BB52A1A00F7EF4A /* egov_dtpUITests.m */; };
+		26DA16A81BB582DD00EFC2DC /* UIColor+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA16A51BB582DD00EFC2DC /* UIColor+Helpers.m */; settings = {ASSET_TAGS = (); }; };
+		26DA16A91BB582DD00EFC2DC /* UIImage+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA16A71BB582DD00EFC2DC /* UIImage+Helpers.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26110C291BB52DD100B0C63B /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
 		2634DE8B1BB52A1900F7EF4A /* egov_dtp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = egov_dtp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2634DE8F1BB52A1A00F7EF4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2634DE911BB52A1A00F7EF4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2634DE921BB52A1A00F7EF4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2634DE941BB52A1A00F7EF4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2634DE951BB52A1A00F7EF4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2634DE911BB52A1A00F7EF4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = egov_dtp/AppDelegate.h; sourceTree = "<group>"; };
+		2634DE921BB52A1A00F7EF4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = egov_dtp/AppDelegate.m; sourceTree = "<group>"; };
+		2634DE941BB52A1A00F7EF4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = egov_dtp/ViewController.h; sourceTree = "<group>"; };
+		2634DE951BB52A1A00F7EF4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = egov_dtp/ViewController.m; sourceTree = "<group>"; };
 		2634DE981BB52A1A00F7EF4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2634DE9A1BB52A1A00F7EF4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2634DE9D1BB52A1A00F7EF4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +56,14 @@
 		2634DEAF1BB52A1A00F7EF4A /* egov_dtpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = egov_dtpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2634DEB31BB52A1A00F7EF4A /* egov_dtpUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = egov_dtpUITests.m; sourceTree = "<group>"; };
 		2634DEB51BB52A1A00F7EF4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26DA16A31BB582DD00EFC2DC /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = egov_dtp/Macros.h; sourceTree = "<group>"; };
+		26DA16A41BB582DD00EFC2DC /* UIColor+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Helpers.h"; path = "egov_dtp/UIColor+Helpers.h"; sourceTree = "<group>"; };
+		26DA16A51BB582DD00EFC2DC /* UIColor+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Helpers.m"; path = "egov_dtp/UIColor+Helpers.m"; sourceTree = "<group>"; };
+		26DA16A61BB582DD00EFC2DC /* UIImage+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Helpers.h"; path = "egov_dtp/UIImage+Helpers.h"; sourceTree = "<group>"; };
+		26DA16A71BB582DD00EFC2DC /* UIImage+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Helpers.m"; path = "egov_dtp/UIImage+Helpers.m"; sourceTree = "<group>"; };
+		33E817A7AD846D103D72E748 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		741245E981599091538023C4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		97ACC26232790107BB10DAD2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BCCC7BC0613661DA3371DFF /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +92,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		158B9BE7B73822477949F7D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33E817A7AD846D103D72E748 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2634DE821BB52A1900F7EF4A = {
 			isa = PBXGroup;
 			children = (
+				26110C291BB52DD100B0C63B /* podfile */,
+				26DA169B1BB57EF400EFC2DC /* Helpers */,
+				2634DEC11BB52A2500F7EF4A /* Main Classes */,
 				2634DE8D1BB52A1A00F7EF4A /* egov_dtp */,
 				2634DEA71BB52A1A00F7EF4A /* egov_dtpTests */,
 				2634DEB21BB52A1A00F7EF4A /* egov_dtpUITests */,
 				2634DE8C1BB52A1900F7EF4A /* Products */,
+				4E148D9FF79FBEF4EE890732 /* Pods */,
+				158B9BE7B73822477949F7D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +128,6 @@
 		2634DE8D1BB52A1A00F7EF4A /* egov_dtp */ = {
 			isa = PBXGroup;
 			children = (
-				2634DE911BB52A1A00F7EF4A /* AppDelegate.h */,
-				2634DE921BB52A1A00F7EF4A /* AppDelegate.m */,
-				2634DE941BB52A1A00F7EF4A /* ViewController.h */,
-				2634DE951BB52A1A00F7EF4A /* ViewController.m */,
 				2634DE971BB52A1A00F7EF4A /* Main.storyboard */,
 				2634DE9A1BB52A1A00F7EF4A /* Assets.xcassets */,
 				2634DE9C1BB52A1A00F7EF4A /* LaunchScreen.storyboard */,
@@ -140,6 +163,38 @@
 			path = egov_dtpUITests;
 			sourceTree = "<group>";
 		};
+		2634DEC11BB52A2500F7EF4A /* Main Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2634DE911BB52A1A00F7EF4A /* AppDelegate.h */,
+				2634DE921BB52A1A00F7EF4A /* AppDelegate.m */,
+				2634DE941BB52A1A00F7EF4A /* ViewController.h */,
+				2634DE951BB52A1A00F7EF4A /* ViewController.m */,
+			);
+			name = "Main Classes";
+			sourceTree = "<group>";
+		};
+		26DA169B1BB57EF400EFC2DC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				26DA16A31BB582DD00EFC2DC /* Macros.h */,
+				26DA16A41BB582DD00EFC2DC /* UIColor+Helpers.h */,
+				26DA16A51BB582DD00EFC2DC /* UIColor+Helpers.m */,
+				26DA16A61BB582DD00EFC2DC /* UIImage+Helpers.h */,
+				26DA16A71BB582DD00EFC2DC /* UIImage+Helpers.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		4E148D9FF79FBEF4EE890732 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				741245E981599091538023C4 /* Pods.debug.xcconfig */,
+				97ACC26232790107BB10DAD2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2634DEB81BB52A1A00F7EF4A /* Build configuration list for PBXNativeTarget "egov_dtp" */;
 			buildPhases = (
+				C39036210F832F70AA2E1172 /* Check Pods Manifest.lock */,
 				2634DE871BB52A1900F7EF4A /* Sources */,
 				2634DE881BB52A1900F7EF4A /* Frameworks */,
 				2634DE891BB52A1900F7EF4A /* Resources */,
+				EDA37F64F24BA53C75EFC601 /* Embed Pods Frameworks */,
+				C27AE3D8807A667D9744753B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,6 +303,7 @@
 			files = (
 				2634DE9E1BB52A1A00F7EF4A /* LaunchScreen.storyboard in Resources */,
 				2634DE9B1BB52A1A00F7EF4A /* Assets.xcassets in Resources */,
+				26110C2A1BB52DD100B0C63B /* podfile in Resources */,
 				2634DE991BB52A1A00F7EF4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +324,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C27AE3D8807A667D9744753B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C39036210F832F70AA2E1172 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA37F64F24BA53C75EFC601 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2634DE871BB52A1900F7EF4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -273,6 +380,8 @@
 				2634DE961BB52A1A00F7EF4A /* ViewController.m in Sources */,
 				2634DE931BB52A1A00F7EF4A /* AppDelegate.m in Sources */,
 				2634DE901BB52A1A00F7EF4A /* main.m in Sources */,
+				26DA16A81BB582DD00EFC2DC /* UIColor+Helpers.m in Sources */,
+				26DA16A91BB582DD00EFC2DC /* UIImage+Helpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +518,7 @@
 		};
 		2634DEB91BB52A1A00F7EF4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 741245E981599091538023C4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = egov_dtp/Info.plist;
@@ -420,6 +530,7 @@
 		};
 		2634DEBA1BB52A1A00F7EF4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97ACC26232790107BB10DAD2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = egov_dtp/Info.plist;
@@ -496,6 +607,7 @@
 				2634DEBA1BB52A1A00F7EF4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2634DEBB1BB52A1A00F7EF4A /* Build configuration list for PBXNativeTarget "egov_dtpTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +616,7 @@
 				2634DEBD1BB52A1A00F7EF4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2634DEBE1BB52A1A00F7EF4A /* Build configuration list for PBXNativeTarget "egov_dtpUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +625,7 @@
 				2634DEC01BB52A1A00F7EF4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
